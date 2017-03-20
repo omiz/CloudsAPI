@@ -199,6 +199,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\AirportsController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -242,6 +243,14 @@
     <Compile Include="Migrations\201703201922071_inital.cs" />
     <Compile Include="Migrations\201703201922071_inital.Designer.cs">
       <DependentUpon>201703201922071_inital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703201946152_inital1.cs" />
+    <Compile Include="Migrations\201703201946152_inital1.Designer.cs">
+      <DependentUpon>201703201946152_inital1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703201950167_addURLAsRequired.cs" />
+    <Compile Include="Migrations\201703201950167_addURLAsRequired.Designer.cs">
+      <DependentUpon>201703201950167_addURLAsRequired.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -316,7 +325,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="API\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
@@ -330,6 +338,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703201922071_inital.resx">
       <DependentUpon>201703201922071_inital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201946152_inital1.resx">
+      <DependentUpon>201703201946152_inital1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703201950167_addURLAsRequired.resx">
+      <DependentUpon>201703201950167_addURLAsRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

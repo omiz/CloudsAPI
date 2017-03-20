@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using Clouds.Models.Config;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
-using Clouds.Models.Config;
 
 namespace Clouds.Models
 {
@@ -22,10 +22,12 @@ namespace Clouds.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new AirportConfig());
-            modelBuilder.Configurations.Add(new MusicConfig());
-
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Configurations.Add(new AirportConfig());
+            modelBuilder.Entity<Airport>();
+            modelBuilder.Configurations.Add(new MusicConfig());
+            modelBuilder.Entity<Music>();
         }
     }
 }

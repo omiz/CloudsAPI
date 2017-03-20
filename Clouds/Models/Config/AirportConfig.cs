@@ -6,18 +6,24 @@ namespace Clouds.Models
     {
         public AirportConfig()
         {
-            HasKey(c => c.Id);
+            HasKey(a => a.Id);
 
-            Property(c => c.Country)
+            Property(a => a.Id)
+                .IsRequired();
+
+            Property(a => a.Country)
                 .HasMaxLength(100);
 
-            Property(c => c.State)
+            Property(a => a.State)
                 .HasMaxLength(100);
 
-            Property(c => c.City)
+            Property(a => a.City)
                 .HasMaxLength(100);
 
             Property(a => a.Code)
+                .IsRequired();
+
+            Property(m => m.URL)
                 .IsRequired();
         }
     }

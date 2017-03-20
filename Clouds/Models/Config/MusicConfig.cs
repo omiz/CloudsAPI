@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity.ModelConfiguration;
 
 namespace Clouds.Models.Config
 {
@@ -10,12 +6,15 @@ namespace Clouds.Models.Config
     {
         public MusicConfig()
         {
-            HasKey(c => c.Id);
+            HasKey(m => m.Id);
 
-            Property(c => c.Title)
+            Property(a => a.Id)
+                .IsRequired();
+
+            Property(m => m.Title)
                 .HasMaxLength(200);
 
-            Property(a => a.URL)
+            Property(m => m.URL)
                 .IsRequired();
         }
     }
