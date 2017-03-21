@@ -14,7 +14,7 @@ namespace Clouds.Migrations
 
         protected override void Seed(Clouds.Models.ApplicationDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            //  This method will be called after migrating to the latest version.http://localhost:50113/Web.Release.config
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
